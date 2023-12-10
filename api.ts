@@ -33,7 +33,7 @@ async function handler(req: Request) {
       "run",
       `--v8-flags=--max-old-space-size=${SCRIPT_MEMORY_LIMIT}`,
       `--allow-read=${scriptPath}`,
-      `--allow-write=./scripts/`,
+      `--allow-write=scripts`,
       `--allow-net=${PROXY_LOCATION}`,
       "./sandbox.ts",
       `scriptId=${scriptId}`,
